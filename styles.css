@@ -14,6 +14,7 @@
 * { box-sizing: border-box; }
 html { height: 100%; scroll-behavior: smooth; }
 body { min-width: 320px; height: 100%; margin: 0; color: var(--ink); background: var(--ivory); font-family: Arial, Helvetica, sans-serif; }
+p { text-align: justify; }
 a { color: inherit; text-underline-offset: .2em; }
 button, a { -webkit-tap-highlight-color: rgba(43, 48, 42, .12); }
 :focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
@@ -70,7 +71,7 @@ h1 { max-width: 12ch; margin: 0; font-size: clamp(3.4rem, 12vw, 6.9rem); line-he
 .section-number { margin: 0 0 1rem; }
 h2 { margin: 0 0 1.6rem; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.08; font-weight: 400; letter-spacing: -.035em; text-wrap: balance; }
 .prose p:not(.section-number), .sources li { max-width: 39rem; font-size: var(--body-size); line-height: 1.7; }
-.prose p:not(.section-number) { margin: 0 0 1.25rem; }
+.prose p:not(.section-number) { margin: 0 0 1.25rem; line-height: 1.4; }
 .prose strong { font-weight: 700; }
 blockquote { margin: 2.25rem 0; padding: .15rem 0 .15rem clamp(1rem, 4vw, 2rem); border-left: 1px solid var(--ink); }
 blockquote p { font-size: clamp(1.3rem, 3vw, 1.65rem) !important; line-height: 1.45 !important; }
