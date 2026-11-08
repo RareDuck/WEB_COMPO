@@ -78,7 +78,7 @@ blockquote p { font-size: clamp(1.3rem, 3vw, 1.65rem) !important; line-height: 1
 .quote-author { margin-top: .35rem; font-family: Arial, Helvetica, sans-serif; font-size: .8rem; line-height: 1.5; font-weight: 700; letter-spacing: .04em; }
 
 /* 4. Imágenes, fuentes y vídeo */
-.editorial-figure { margin: clamp(3.5rem, 8vh, 6rem) 0 0; }
+.editorial-figure { margin: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(1.5rem, 4vw, 2.5rem); }
 .editorial-figure img { display: block; max-width: 100%; width: 100%; height: auto; }
 .image-placeholder { display: flex; min-height: clamp(12rem, 44vw, 21rem); flex-direction: column; align-items: center; justify-content: center; gap: .5rem; padding: 1rem; border: 1px solid var(--line); background: rgba(250, 248, 240, .17); text-align: center; }
 .image-placeholder span { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.35rem, 3vw, 1.8rem); }
