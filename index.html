@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#faf8f0">
   <meta name="description" content="Dos temas académicos presentados como una publicación editorial digital.">
-  <title>Dos papeles · Publicación de ejemplo</title>
+  <title>Villafranco de Guadiana</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -15,41 +15,42 @@
     <article class="paper paper--sage" id="tema-1" aria-labelledby="titulo-tema-1" tabindex="-1">
       <div class="paper__inner">
         <header class="paper__header">
-          <p class="paper__eyebrow"><span>Cuaderno de estudio</span><span>Tema 01 / 02</span></p>
+          <p class="paper__eyebrow"><span>Composición arquitectónica I</span><span>Tema 01 / 02</span></p>
           <p class="paper__sample">Contenido de ejemplo · Sustituir por el texto definitivo</p>
-          <h1 id="titulo-tema-1">Materia y memoria</h1>
-          <p class="paper__lead">Una aproximación de muestra a los objetos que conservan las huellas de una comunidad.</p>
+          <h1 id="titulo-tema-1">El espacio agropecuario</h1>
+          <p class="paper__lead">Un estudio del caso de Villafranco de Guadiana en el diseño de los poblados de colonización.</p>
           <div class="paper__rule" aria-hidden="true"></div>
         </header>
 
         <section class="prose" aria-labelledby="introduccion-1">
-          <p class="section-number">01 — Punto de partida</p>
-          <h2 id="introduccion-1">Introducción</h2>
-          <p>Este párrafo es un ejemplo de introducción. Aquí puedes presentar la pregunta principal del tema, explicar su contexto y orientar la lectura antes de entrar en los apartados.</p>
-          <p>El texto puede crecer libremente. Cada papel conserva su propio desplazamiento vertical, de modo que añadir contenido no cambia la forma de pasar al otro tema.</p>
+          <p class="section-number">01 — Introducción</p>
+          <h2 id="introduccion-1">El poblado de colonización</h2>
+          <p>Este párrafo es un ejemplo de introducción. Son las dos de la mañana asique no lo voy a escribir ahora mismo. Ángel acuerdate de cambiarlo.</p>
+          <p>Este es otro párrafo con una opinión un poco más pesimista. Ángel no se va a acordar.</p>
         </section>
 
         <section class="prose" aria-labelledby="seccion-1-1">
           <p class="section-number">02 — Desarrollo</p>
-          <h2 id="seccion-1-1">Los objetos como archivo</h2>
-          <p>Este apartado muestra la estructura de una sección. Puedes utilizar <strong>negrita</strong> para destacar una idea y <em>cursiva</em> para títulos de obras o términos especiales.</p>
-          <p>Una segunda observación de ejemplo permite apreciar el ritmo de lectura, los márgenes y la longitud de línea tanto en un teléfono como en una pantalla grande.</p>
+          <h2 id="seccion-1-1">Los poblados de colonización</h2>
+          <p>Este apartado muestra la estructura de una sección. recordatorio de cómo <strong>poner texto en negrita</strong> o en <em>cursiva</em>.</p>
+          <p>Ñ</p>
         </section>
 
         <figure class="editorial-figure">
-          <!-- Sustituye este div por una etiqueta img cuando tengas la imagen definitiva. -->
-          <div class="image-placeholder" role="img" aria-label="Espacio reservado para una imagen de ejemplo">
-            <span>Imagen de ejemplo</span>
-            <small>Archivo futuro · assets/images/</small>
-          </div>
-          <figcaption>Figura 1. Pie de imagen de ejemplo: describe aquí qué muestra la figura y, si corresponde, indica su procedencia.</figcaption>
-        </figure>
+		<img src="assets/images/XD.webp"
+			alt="AAA"
+			width="1200" height="800" loading="lazy">
+		<figcaption>Figura 1. Documentos del archivo local, 1950. Fotografía: nombre de la autora.</figcaption>
+		</figure>
 
         <section class="prose" aria-labelledby="seccion-1-2">
           <p class="section-number">03 — Lectura</p>
           <h2 id="seccion-1-2">Una lectura posible</h2>
           <p>El contenido de este apartado es ficticio. Una cita breve puede aportar otra voz a la página sin alterar la sencillez de la composición.</p>
-          <blockquote><p>“Una cita de ejemplo puede abrir una nueva línea de interpretación.”</p></blockquote>
+          <blockquote>
+            <p>“Deja de tocarme los huevos.”</p>
+            <footer class="quote-author">— Alberto Campo Berza</footer>
+          </blockquote>
           <p>Continúa aquí con los argumentos, las observaciones y las imágenes que necesite el tema definitivo.</p>
         </section>
 
@@ -63,13 +64,14 @@
         </section>
 
         <section class="video-section" aria-labelledby="video-1">
-          <p class="section-number">05 — Audiovisual</p>
-          <h2 id="video-1">Vídeo del tema</h2>
-          <!-- Oculta este estado vacío al añadir un vídeo real. Consulta README.md. -->
-          <div class="video-empty"><span class="video-empty__symbol" aria-hidden="true">▶</span><p>Vídeo pendiente</p><small>Este espacio está preparado para el material audiovisual del tema.</small></div>
-          <video class="topic-video" controls playsinline preload="none" hidden>
-            Tu navegador no puede reproducir este vídeo. Añade aquí un enlace al archivo MP4 como alternativa.
-          </video>
+          	<p class="section-number">05 — Audiovisual</p>
+          	<h2 id="video-1">Vídeo del tema</h2>
+			<video class="topic-video" controls playsinline preload="none"
+					poster="assets/images/a.webp">
+				<source src="assets/videos/rickroll.mp4" type="video/mp4">
+				Tu navegador no puede reproducir este vídeo.
+				<a href="assets/videos/rickroll.mp4">Descarga el archivo MP4</a>.
+			</video>
         </section>
 
         <footer class="paper__footer"><span>Fin del tema 01</span><span>Desliza para continuar <span aria-hidden="true">→</span></span></footer>
@@ -81,61 +83,63 @@
     <article class="paper paper--terracotta" id="tema-2" aria-labelledby="titulo-tema-2" tabindex="-1">
       <div class="paper__inner">
         <header class="paper__header">
-          <p class="paper__eyebrow"><span>Cuaderno de estudio</span><span>Tema 02 / 02</span></p>
+          <p class="paper__eyebrow"><span>Composición arquitectónica I</span><span>Tema 01 / 02</span></p>
           <p class="paper__sample">Contenido de ejemplo · Sustituir por el texto definitivo</p>
-          <h1 id="titulo-tema-2">Espacio y comunidad</h1>
-          <p class="paper__lead">Un recorrido de muestra por los lugares donde la vida colectiva adquiere forma.</p>
+          <h1 id="titulo-tema-1">El espacio doméstico</h1>
+          <p class="paper__lead">Un estudio del caso de Villafranco de Guadiana en el diseño de los poblados de colonización.</p>
           <div class="paper__rule" aria-hidden="true"></div>
         </header>
 
-        <section class="prose" aria-labelledby="introduccion-2">
-          <p class="section-number">01 — Punto de partida</p>
-          <h2 id="introduccion-2">Introducción</h2>
-          <p>Esta introducción también es contenido de ejemplo. Utilízala para explicar la relación entre el segundo tema y el primero, o para comenzar una lectura independiente.</p>
-          <p>Los encabezados y párrafos se escriben directamente en este archivo HTML. Puedes añadir tantos como necesites sin tocar la navegación.</p>
+        <section class="prose" aria-labelledby="introduccion-1">
+          <p class="section-number">01 — Introducción</p>
+          <h2 id="introduccion-1">El poblado de colonización</h2>
+          <p>Este párrafo es un ejemplo de introducción. Son las dos de la mañana asique no lo voy a escribir ahora mismo. Ángel acuerdate de cambiarlo.</p>
+          <p>Este es otro párrafo con una opinión un poco más pesimista. Ángel no se va a acordar.</p>
         </section>
 
-        <section class="prose" aria-labelledby="seccion-2-1">
+        <section class="prose" aria-labelledby="seccion-1-1">
           <p class="section-number">02 — Desarrollo</p>
-          <h2 id="seccion-2-1">Lugares compartidos</h2>
-          <p>Este texto ficticio ocupa el lugar de una primera idea. La composición da prioridad al contenido y reserva las imágenes para apoyar la explicación cuando sean necesarias.</p>
-          <p>Al incorporar material definitivo, conviene mantener párrafos de extensión moderada y encabezados descriptivos para facilitar la lectura en pantallas pequeñas.</p>
+          <h2 id="seccion-1-1">Los poblados de colonización</h2>
+          <p>Este apartado muestra la estructura de una sección. recordatorio de cómo <strong>poner texto en negrita</strong> o en <em>cursiva</em>.</p>
+          <p>Ñ</p>
         </section>
 
         <figure class="editorial-figure">
-          <!-- Sustituye este div por una etiqueta img cuando tengas la imagen definitiva. -->
-          <div class="image-placeholder" role="img" aria-label="Espacio reservado para una imagen de ejemplo">
-            <span>Imagen de ejemplo</span>
-            <small>Archivo futuro · assets/images/</small>
-          </div>
-          <figcaption>Figura 2. Pie de imagen de ejemplo: añade una explicación concisa y el crédito de la fotografía o ilustración.</figcaption>
-        </figure>
+		<img src="assets/images/67.webp"
+			alt="AAA"
+			width="1200" height="800" loading="lazy">
+		<figcaption>Figura 1. Documentos del archivo local, 1950. Fotografía: nombre de la autora.</figcaption>
+		</figure>
 
-        <section class="prose" aria-labelledby="seccion-2-2">
+        <section class="prose" aria-labelledby="seccion-1-2">
           <p class="section-number">03 — Lectura</p>
-          <h2 id="seccion-2-2">Relaciones en el paisaje</h2>
-          <p>Una sección posterior puede reunir ejemplos, comparaciones y conclusiones provisionales. El diseño admite nuevas secciones sin exigir cambios en las reglas CSS.</p>
-          <blockquote><p>“El espacio se comprende también a través de quienes lo habitan.”</p></blockquote>
-          <p>La cita anterior es ficticia y debe reemplazarse o eliminarse antes de publicar contenido académico definitivo.</p>
+          <h2 id="seccion-1-2">Una lectura posible</h2>
+          <p>El contenido de este apartado es ficticio. Una cita breve puede aportar otra voz a la página sin alterar la sencillez de la composición.</p>
+          <blockquote>
+            <p>“Deja de tocarme los huevos.”</p>
+            <footer class="quote-author">— Alberto Campo Berza</footer>
+          </blockquote>
+          <p>Continúa aquí con los argumentos, las observaciones y las imágenes que necesite el tema definitivo.</p>
         </section>
 
-        <section class="sources" aria-labelledby="fuentes-2">
+        <section class="sources" aria-labelledby="fuentes-1">
           <p class="section-number">04 — Para ampliar</p>
-          <h2 id="fuentes-2">Fuentes y enlaces</h2>
+          <h2 id="fuentes-1">Fuentes y enlaces</h2>
           <ul>
-            <li>Apellido, Nombre. <cite>Otra obra de ejemplo</cite>. Editorial de ejemplo, 2023.</li>
-            <li><a href="https://example.org/" target="_blank" rel="noopener noreferrer">Enlace externo de ejemplo <span aria-hidden="true">↗</span></a>. Reemplaza esta dirección por una referencia comprobada.</li>
+            <li>Apellido, Nombre. <cite>Título de una obra de ejemplo</cite>. Editorial de ejemplo, 2024.</li>
+            <li><a href="https://example.org/" target="_blank" rel="noopener noreferrer">Enlace externo de ejemplo <span aria-hidden="true">↗</span></a>. Sustituye la dirección y el título por una fuente real.</li>
           </ul>
         </section>
 
-        <section class="video-section" aria-labelledby="video-2">
-          <p class="section-number">05 — Audiovisual</p>
-          <h2 id="video-2">Vídeo del tema</h2>
-          <!-- Oculta este estado vacío al añadir un vídeo real. Consulta README.md. -->
-          <div class="video-empty"><span class="video-empty__symbol" aria-hidden="true">▶</span><p>Vídeo pendiente</p><small>Este espacio está preparado para el material audiovisual del tema.</small></div>
-          <video class="topic-video" controls playsinline preload="none" hidden>
-            Tu navegador no puede reproducir este vídeo. Añade aquí un enlace al archivo MP4 como alternativa.
-          </video>
+        <section class="video-section" aria-labelledby="video-1">
+          	<p class="section-number">05 — Audiovisual</p>
+          	<h2 id="video-1">Vídeo del tema</h2>
+			<video class="topic-video" controls playsinline preload="none"
+					poster="assets/images/no.gif">
+				<source src="assets/videos/rickroll.mp4" type="video/mp4">
+				Tu navegador no puede reproducir este vídeo.
+				<a href="assets/videos/xd.mp4">Descarga el archivo MP4</a>.
+			</video>
         </section>
 
         <footer class="paper__footer"><span>Fin del tema 02</span><span>Desliza para volver <span aria-hidden="true">←</span></span></footer>

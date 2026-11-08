@@ -74,6 +74,7 @@ h2 { margin: 0 0 1.6rem; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.08;
 .prose strong { font-weight: 700; }
 blockquote { margin: 2.25rem 0; padding: .15rem 0 .15rem clamp(1rem, 4vw, 2rem); border-left: 1px solid var(--ink); }
 blockquote p { font-size: clamp(1.3rem, 3vw, 1.65rem) !important; line-height: 1.45 !important; }
+.quote-author { margin-top: .35rem; font-family: Arial, Helvetica, sans-serif; font-size: .8rem; line-height: 1.5; font-weight: 700; letter-spacing: .04em; }
 
 /* 4. Imágenes, fuentes y vídeo */
 .editorial-figure { margin: clamp(3.5rem, 8vh, 6rem) 0 0; }
@@ -93,13 +94,13 @@ figcaption { max-width: 36rem; margin-top: .75rem; font-size: .8rem; line-height
 .paper__footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: clamp(4rem, 9vh, 7rem); padding-top: .9rem; border-top: 1px solid var(--line); }
 
 /* 5. Navegación siempre visible */
-.page-nav { position: fixed; z-index: 10; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); left: max(1rem, env(safe-area-inset-left)); display: flex; width: min(20rem, calc(100% - 2rem)); height: 3.5rem; align-items: center; justify-content: space-between; margin-inline: auto; padding: .2rem; border: 1px solid rgba(43, 48, 42, .2); border-radius: 999px; background: var(--ivory); color: var(--ink); box-shadow: 0 3px 12px rgba(43, 48, 42, .08); }
-.page-nav__arrow, .page-nav__page { display: grid; min-width: 2.8rem; min-height: 2.8rem; place-items: center; border-radius: 50%; text-decoration: none; }
-.page-nav__arrow { font-size: 1.35rem; transition: background-color .16s ease, transform .16s ease; }
+.page-nav { position: fixed; z-index: 10; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); left: max(1rem, env(safe-area-inset-left)); display: flex; width: min(12rem, calc(100% - 2rem)); height: 3.125rem; align-items: center; justify-content: space-between; margin-inline: auto; padding: .1rem; border: 1px solid rgba(43, 48, 42, .2); border-radius: 999px; background: var(--ivory); color: var(--ink); box-shadow: 0 3px 12px rgba(43, 48, 42, .08); }
+.page-nav__arrow, .page-nav__page { display: grid; min-width: 2.75rem; min-height: 2.75rem; place-items: center; border-radius: 50%; text-decoration: none; }
+.page-nav__arrow { font-size: 1.2rem; transition: background-color .16s ease, transform .16s ease; }
 .page-nav__arrow:hover, .page-nav__arrow:active, .page-nav__page:hover, .page-nav__page:active { background: rgba(43, 48, 42, .1); }
 .page-nav__arrow:active { transform: scale(.92); }
 .page-nav__arrow[aria-disabled="true"] { opacity: .38; pointer-events: none; }
-.page-nav__pages { display: flex; align-items: center; gap: .05rem; font-size: .78rem; font-weight: 700; letter-spacing: .08em; }
+.page-nav__pages { display: flex; align-items: center; gap: 0; font-size: .72rem; font-weight: 700; letter-spacing: .04em; }
 .page-nav__page[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .35em; }
 .page-nav__divider { opacity: .45; }
 

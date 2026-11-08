@@ -69,6 +69,17 @@ Usa `<strong>` para una idea importante y `<em>` para énfasis o títulos de obr
 <p>Esta idea es <strong>especialmente importante</strong> y este término va en <em>cursiva</em>.</p>
 ```
 
+Para incluir una cita con su autor, edita el texto del `<p>` y del `<footer class="quote-author">` dentro del mismo `<blockquote>`:
+
+```html
+<blockquote>
+  <p>“Texto de la cita.”</p>
+  <footer class="quote-author">— Nombre de la autora o del autor</footer>
+</blockquote>
+```
+
+`<blockquote>` agrupa una cita extensa, `<p>` contiene las palabras citadas y `<footer>` muestra su atribución. Si conoces la obra o la página de origen, añádela también en «Fuentes y enlaces» para que la cita pueda verificarse.
+
 ### Imágenes y pies
 
 Guarda la imagen en `assets/images/`. En la figura correspondiente, sustituye el bloque `<div class="image-placeholder">...</div>` por una imagen. Conserva `<figure>` y `<figcaption>`:
